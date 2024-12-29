@@ -1,0 +1,17 @@
+{
+  "name": "hotel-aggregator-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "npm run dev --prefix app/client",
+    "dev:server": "npm run start --prefix app/server",
+    "dev": "concurrently \"npm run dev --prefix app/client\" \"npm run start --prefix app/server\""
+  },
+  "author": "Piskun_Ivan",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0",
+    "dotenv": "^16.4.5"
+  }
+}
